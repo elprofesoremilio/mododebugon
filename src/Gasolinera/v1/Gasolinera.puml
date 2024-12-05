@@ -1,0 +1,20 @@
+@startuml
+class Coche {
+    - litrosDepósito : int
+    - capacidadDepósito : int
+
+    + Coche(capacidad : int, litros : int)
+    + cargarCombustible(litros : int) : int
+    + llenarDepósito() : int
+}
+
+class Surtidor {
+    - precioLitro : float
+
+    + surtirCombustible(litros : int, coche : Coche) : int
+    + surtirCombustible(importe : float, coche : Coche) : int
+    + llenarDepósito(coche) : int
+}
+Surtidor -u- Coche
+
+@enduml
