@@ -1,4 +1,5 @@
 @startuml
+
 class Coche {
     - litrosDepósito : int
     - capacidadDepósito : int
@@ -16,5 +17,8 @@ class Surtidor {
     + llenarDepósito(coche) : int
 }
 Surtidor -u- Coche
-
+Gasolinera -u- Surtidor
+note left of Coche : Modelo
+note left of Surtidor : Controlador
+note left of Gasolinera : Vista
 @enduml

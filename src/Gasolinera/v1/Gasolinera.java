@@ -3,7 +3,7 @@ package Gasolinera.v1;
 import java.util.Scanner;
 
 public class Gasolinera {
-    public static float PRECIO_LITRO = 1.5f;
+    public static float PRECIO_LITRO = 1.9f;
 
     public static void main(String[] args) {
         Surtidor surtidor = new Surtidor(Gasolinera.PRECIO_LITRO);
